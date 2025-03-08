@@ -4,86 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Máy tính khoản vay</title>
-    <style>
-        /* Nền gradient đẹp */
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Hộp chứa có hiệu ứng 3D */
-        .container {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-            display: inline-block;
-            width: 90%;
-            max-width: 400px;
-            backdrop-filter: blur(10px);
-        }
-
-        h2 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            color: #ffcc00;
-        }
-
-        /* Định dạng input và button */
-        input, button {
-            width: 85%;
-            padding: 12px;
-            margin: 8px 0;
-            border-radius: 8px;
-            border: none;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 16px;
-        }
-
-        input {
-            background: rgba(255, 255, 255, 0.3);
-            color: black;
-            font-weight: bold;
-            border: 1px solid white;
-            text-align: center;
-        }
-
-        input::placeholder {
-            color: rgba(0, 0, 0, 0.5);
-        }
-
-        /* Nút bấm có hiệu ứng hover */
-        button {
-            background: #ffcc00;
-            color: black;
-            font-weight: bold;
-            cursor: pointer;
-            border: 1px solid transparent;
-            transition: all 0.3s ease;
-        }
-
-        button:hover {
-            background: #ff9900;
-            transform: scale(1.05);
-            border: 1px solid white;
-        }
-
-        /* Kết quả hiển thị nổi bật */
-        .result {
-            font-size: 18px;
-            font-weight: bold;
-            color: #ffffff;
-            margin-top: 15px;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -106,33 +27,7 @@
         <p class="result">💰 Tổng số tiền phải trả: <span id="totalPayment">0</span> VND</p>
     </div>
 
-    <script>
-        function calculateLoan() {
-            let loanAmount = parseFloat(document.getElementById("loanAmount").value);
-            let annualInterestRate = parseFloat(document.getElementById("annualInterestRate").value);
-            let loanTerm = parseInt(document.getElementById("loanTerm").value);
-            
-            if (isNaN(loanAmount) || loanAmount <= 0 || isNaN(annualInterestRate) || annualInterestRate < 0 || isNaN(loanTerm) || loanTerm <= 0) {
-                alert("⚠️ Vui lòng nhập thông tin hợp lệ.");
-                return;
-            }
-            
-            let monthlyInterestRate = annualInterestRate / 12 / 100;
-            let totalPayments = loanTerm * 12;
-            let monthlyPayment;
-            
-            if (annualInterestRate === 0) {
-                monthlyPayment = loanAmount / totalPayments;
-            } else {
-                monthlyPayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -totalPayments));
-            }
-            
-            let totalPayment = monthlyPayment * totalPayments;
-            
-            document.getElementById("monthlyPayment").innerText = monthlyPayment.toLocaleString("vi-VN", {minimumFractionDigits: 2, maximumFractionDigits: 2});
-            document.getElementById("totalPayment").innerText = totalPayment.toLocaleString("vi-VN", {minimumFractionDigits: 2, maximumFractionDigits: 2});
-        }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
