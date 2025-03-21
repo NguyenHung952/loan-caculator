@@ -60,9 +60,7 @@ git clone https://github.com/YOUR-USERNAME/loan-calculator.git
 2️⃣ Mở file `index.html` trong trình duyệt.  
 3️⃣ Nhập thông tin khoản vay và xem kết quả.  
 
-### 🌍 **2. Chạy trên Google Site**  
-Nếu bạn muốn triển khai có thể truy cập:  
-https://sites.google.com/view/mycodinz/t%C3%ADnh-vay-n%E1%BB%A3
+
 
 ---
 
