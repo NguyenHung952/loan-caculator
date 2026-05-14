@@ -1,85 +1,159 @@
-# 💰 Máy Tính Khoản Vay 💰  
-### 🎯 Công cụ tính toán khoản vay đơn giản và dễ sử dụng  
+# 💰 Máy Tính Khoản Vay 💰
 
-**Máy tính khoản vay** giúp bạn nhanh chóng tính toán số tiền phải trả hàng tháng và tổng số tiền phải trả khi vay ngân hàng. Chỉ cần nhập số tiền vay, lãi suất hàng năm và thời gian vay, công cụ sẽ tính toán kết quả ngay lập tức.  
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-Web-orange?style=for-the-badge&logo=html5">
+  <img src="https://img.shields.io/badge/CSS3-Responsive-blue?style=for-the-badge&logo=css3">
+  <img src="https://img.shields.io/badge/JavaScript-Calculator-yellow?style=for-the-badge&logo=javascript">
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
+</p>
 
----
-
-## 🌟 **Tính năng chính**  
-✔️ **Tính toán khoản vay nhanh chóng** với công thức chuẩn.  
-✔️ **Giao diện đẹp mắt**, dễ sử dụng trên cả điện thoại và máy tính.  
-✔️ **Hiển thị số tiền trả hàng tháng và tổng số tiền phải trả**.  
-✔️ **Công thức chuẩn xác**, hỗ trợ cả trường hợp lãi suất bằng 0.  
-
----
-
-## 🎮 **Cách sử dụng**  
-1️⃣ Nhập **số tiền vay (VND)**.  
-2️⃣ Nhập **lãi suất hàng năm (%)**.  
-3️⃣ Nhập **thời hạn vay (năm)**.  
-4️⃣ Nhấn **"📊 Tính toán"**.  
-5️⃣ Xem kết quả **số tiền trả hàng tháng và tổng số tiền phải trả**.  
+<p align="center">
+  🏦 Công cụ tính toán khoản vay nhanh chóng, trực quan và dễ sử dụng.
+</p>
 
 ---
 
-## 🛠 **Công thức tính toán**  
-Công cụ sử dụng công thức chuẩn để tính toán khoản vay theo lãi suất cố định:  
+# 📖 Giới thiệu
 
-\[
-M = \frac{P \times r}{1 - (1 + r)^{-n}}
-\]
+**Máy Tính Khoản Vay** là một web tool giúp người dùng nhanh chóng tính toán các thông tin cơ bản liên quan đến khoản vay ngân hàng.
 
-Trong đó:  
-- **M**: Số tiền phải trả hàng tháng  
-- **P**: Số tiền vay  
-- **r**: Lãi suất hàng tháng (**lãi suất năm / 12 / 100**)  
-- **n**: Tổng số tháng vay (**năm × 12**)  
+Người dùng chỉ cần nhập:
 
-💡 **Nếu lãi suất = 0**, công cụ sẽ tính toán khoản vay theo phương pháp chia đều.  
+- 💵 Số tiền vay
+- 📈 Lãi suất hàng năm
+- 📅 Thời gian vay
+
+Hệ thống sẽ tự động tính toán:
+
+- Số tiền trả hàng tháng
+- Tổng tiền phải trả
+- Tổng tiền lãi
+- Chi phí khoản vay
 
 ---
 
-## 📂 **Cấu trúc thư mục**  
+# 🚀 Demo
+
+🔗 Live Demo:
+
+```bash
+https://nguyenhung952.github.io/
 ```
+
+---
+
+# 📂 Cấu trúc Project
+
+```bash
 loan-calculator/
-│── index.html      # Giao diện HTML chính
-│── styles.css      # Định dạng giao diện
-│── script.js       # Code xử lý tính toán khoản vay
-└── README.md       # Mô tả dự án (file này)
+│
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
 ```
 
 ---
 
-## 🚀 **Cách chạy dự án**  
+# 🛠 Công nghệ sử dụng
 
-### 🖥️ **1. Chạy trên máy tính**  
-1️⃣ Clone hoặc tải mã nguồn về máy:  
-```sh
-git clone https://github.com/YOUR-USERNAME/loan-calculator.git
+| Công nghệ | Vai trò |
+|---|---|
+| HTML5 | Xây dựng giao diện |
+| CSS3 | Thiết kế UI |
+| JavaScript | Xử lý phép tính tài chính |
+
+---
+
+# ⚙️ Chức năng chính
+
+## 📌 Loan Calculation
+- Tính khoản vay
+- Tính tiền trả hàng tháng
+- Tính tổng tiền lãi
+
+## 📌 Financial Summary
+- Tổng số tiền thanh toán
+- Chi phí lãi suất
+- Kết quả hiển thị trực quan
+
+## 📌 User Interface
+- Responsive Design
+- Giao diện hiện đại
+- Dễ sử dụng trên nhiều thiết bị
+
+---
+
+# 🧠 Kiến thức áp dụng
+
+Project sử dụng các kiến thức:
+
+- Financial Calculation
+- JavaScript DOM
+- Event Handling
+- Frontend Development
+- UI/UX Design
+
+---
+
+# 📸 Điểm nổi bật
+
+✨ Giao diện tối hiện đại  
+✨ Tính toán nhanh chóng  
+✨ Chạy trực tiếp trên trình duyệt  
+✨ Không cần cài đặt phần mềm  
+✨ Hỗ trợ học tập và quản lý tài chính cơ bản
+
+---
+
+# ▶️ Cách chạy project
+
+## Clone repository
+
+```bash
+git clone https://github.com/your-username/loan-calculator.git
 ```
-2️⃣ Mở file `index.html` trong trình duyệt.  
-3️⃣ Nhập thông tin khoản vay và xem kết quả.  
 
+## Chạy ứng dụng
 
+Mở file:
 
----
+```bash
+index.html
+```
 
-## 🎯 **Đóng góp & Cải tiến**  
-Nếu bạn muốn cải thiện dự án, hãy làm theo các bước sau:  
-1️⃣ **Fork** repository này.  
-2️⃣ Tạo một **branch mới** với tính năng bạn muốn thêm.  
-3️⃣ **Commit** thay đổi và **push** lên GitHub.  
-4️⃣ Gửi **pull request** để mình xem xét! 🚀  
+bằng trình duyệt để sử dụng.
 
 ---
 
-## 📜 **Bản quyền & Giấy phép**  
-Dự án này được phát triển với mục đích **học tập và phi lợi nhuận**. Bạn có thể sử dụng, chỉnh sửa và chia sẻ thoải mái.  
+# 🎯 Mục tiêu dự án
+
+- Thực hành JavaScript frontend
+- Xây dựng công cụ tài chính đơn giản
+- Rèn luyện xử lý dữ liệu đầu vào
+- Cải thiện kỹ năng thiết kế web tool
 
 ---
 
-Chúc bạn sử dụng vui vẻ! 💰💡 **Nếu thấy hay, hãy ⭐ repository này nhé!** 🚀✨  
+# ⚠️ Lưu ý
+
+Kết quả tính toán chỉ mang tính tham khảo và có thể khác so với chính sách thực tế của từng ngân hàng.
 
 ---
 
-Bạn có muốn bổ sung gì vào phần mô tả này không? 😎🔥
+# 👨‍💻 Author
+
+**Nguyễn Ngọc Hùng**  
+Sinh viên Điện tử Viễn thông – IUH
+
+---
+
+# ⭐ Support
+
+Nếu project hữu ích, hãy để lại một ⭐ cho repository.
+
+---
+
+<p align="center">
+  Made with ❤️ using HTML • CSS • JavaScript
+</p>
